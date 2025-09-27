@@ -1,16 +1,48 @@
-{
-  "Medicamentos": [
-    { "id": 1, "name": "Paracetamol 750mg", "price": "R$ 12,90", "promo": true },
-    { "id": 2, "name": "Dipirona 500mg", "price": "R$ 8,50", "promo": false },
-    { "id": 3, "name": "Ibuprofeno 400mg", "price": "R$ 15,00", "promo": false }
-  ],
-  "Beleza e Higiene": [
-    { "id": 4, "name": "Shampoo Anticaspa", "price": "R$ 22,00", "promo": false },
-    { "id": 5, "name": "Creme Hidratante", "price": "R$ 18,90", "promo": true },
-    { "id": 6, "name": "Protetor Solar FPS 50", "price": "R$ 45,00", "promo": false }
-  ],
-  "Vitaminas e Suplementos": [
-    { "id": 7, "name": "Vitamina C 1g", "price": "R$ 30,00", "promo": true },
-    { "id": 8, "name": "Ômega 3", "price": "R$ 55,00", "promo": false }
-  ]
+import { useEffect, useState } from "react";
+
+export default function App() {
+  const [produtos, setProdutos] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  // Carrega os produtos do arquivo JSON
+  useEffect(() => {
+    fetch("/produtos.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setProdutos(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Erro ao carregar produtos:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <p style={{ textAlign: "center", padding: "20px" }}>Carregando produtos...</p>;
+  }
+
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1 style={{ textAlign: "center", color: "red" }}>Nossos Produtos</h1>
+      {Object.keys(produtos).map((categoria) => (
+        <div key={categoria} style={{ marginBottom: "30px" }}>
+          <h2 style={{ color: "darkred" }}>{categoria}</h2>
+          <div style={{ display: "grid", gap: "15px", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
+            {produtos[categoria].map((item) => (
+              <div key={item.id} style={{ border: "1px solid #ddd", padding: "10px", borderRadius: "8px", background: "#fff" }}>
+                <h3>{item.name}</h3>
+                <p>{item.price}</p>
+                {item.promo && (
+                  <span style={{ background: "red", color: "white", padding: "3px 6px", borderRadius: "4px" }}>
+                    Promoção
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
