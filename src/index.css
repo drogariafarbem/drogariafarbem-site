@@ -1,55 +1,68 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
 }
 
-.app {
+/* Fundo da página */
+body {
+  background-color: #ffffff; /* Branco */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #c8102e; /* Vermelho */
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-.header {
-  background-color: #d32f2f; /* vermelho */
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.logo {
-  width: 60px;
-  height: auto;
-}
-
-.titulo {
+header h1 {
   font-size: 2rem;
-  margin: 0;
 }
 
-.conteudo {
+/* Lista de produtos */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
   padding: 20px;
 }
 
-.subtitulo {
-  color: #d32f2f;
-  margin-bottom: 20px;
-}
-
-.lista {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  gap: 15px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.item {
-  background: white;
+.produto-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.produto-card:hover {
+  transform: scale(1.05);
+}
+
+.produto-card h3 {
+  color: #c8102e; /* Vermelho */
+  margin-bottom: 10px;
+}
+
+.produto-card p {
   font-weight: bold;
 }
+
+/* Rodapé */
+footer {
+  background-color: #c8102e; /* Vermelho */
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
