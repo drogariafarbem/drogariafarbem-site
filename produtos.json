@@ -1,0 +1,16 @@
+{
+  "Medicamentos": [
+    { "id": 1, "name": "Paracetamol 750mg", "price": "R$ 12,90", "promo": true },
+    { "id": 2, "name": "Dipirona 500mg", "price": "R$ 8,50", "promo": false },
+    { "id": 3, "name": "Ibuprofeno 400mg", "price": "R$ 15,00", "promo": false }
+  ],
+  "Beleza e Higiene": [
+    { "id": 4, "name": "Shampoo Anticaspa", "price": "R$ 22,00", "promo": false },
+    { "id": 5, "name": "Creme Hidratante", "price": "R$ 18,90", "promo": true },
+    { "id": 6, "name": "Protetor Solar FPS 50", "price": "R$ 45,00", "promo": false }
+  ],
+  "Vitaminas e Suplementos": [
+    { "id": 7, "name": "Vitamina C 1g", "price": "R$ 30,00", "promo": true },
+    { "id": 8, "name": "Ômega 3", "price": "R$ 55,00", "promo": false }
+  ]
+}
