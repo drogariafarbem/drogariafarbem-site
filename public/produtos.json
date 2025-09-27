@@ -1,0 +1,44 @@
+{
+  "Medicamentos": [
+    {
+      "id": 1,
+      "name": "Dipirona Sódica 500mg c/ 20",
+      "price": "R$ 8,90",
+      "promo": true
+    },
+    {
+      "id": 2,
+      "name": "Paracetamol 750mg c/ 20",
+      "price": "R$ 9,50",
+      "promo": false
+    }
+  ],
+  "Vitaminas e Suplementos": [
+    {
+      "id": 3,
+      "name": "Vitamina C efervescente c/ 10",
+      "price": "R$ 14,90",
+      "promo": true
+    },
+    {
+      "id": 4,
+      "name": "Ômega 3 1000mg c/ 120 cápsulas",
+      "price": "R$ 39,90",
+      "promo": false
+    }
+  ],
+  "Higiene e Beleza": [
+    {
+      "id": 5,
+      "name": "Shampoo Anticaspa 200ml",
+      "price": "R$ 18,90",
+      "promo": false
+    },
+    {
+      "id": 6,
+      "name": "Creme Dental 90g",
+      "price": "R$ 4,99",
+      "promo": true
+    }
+  ]
+}
