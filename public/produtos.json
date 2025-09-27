@@ -1,23 +1,37 @@
 
 {
   "Medicamentos": [
-    { "id": 1, "name": "Dipirona 500mg c/ 20 comprimidos", "price": "R$ 9,90", "promo": true },
-    { "id": 2, "name": "Paracetamol 750mg c/ 20 comprimidos", "price": "R$ 12,50", "promo": false },
-    { "id": 3, "name": "Vitamina C efervescente c/ 10", "price": "R$ 14,90", "promo": true }
+    {
+      "id": 1,
+      "name": "Dipirona",
+      "price": "R$ 9,90",
+      "promo": true
+    },
+    {
+      "id": 2,
+      "name": "Paracetamol",
+      "price": "R$ 7,50",
+      "promo": false
+    },
+    {
+      "id": 3,
+      "name": "Ibuprofeno",
+      "price": "R$ 12,00",
+      "promo": false
+    }
   ],
   "Perfumaria": [
-    { "id": 4, "name": "Shampoo Anticaspa 200ml", "price": "R$ 19,90", "promo": false },
-    { "id": 5, "name": "Sabonete Líquido 250ml", "price": "R$ 15,90", "promo": false },
-    { "id": 6, "name": "Perfume Floral 100ml", "price": "R$ 89,90", "promo": true }
-  ],
-  "Infantil": [
-    { "id": 7, "name": "Fraldas Pampers M c/ 30 unid.", "price": "R$ 49,90", "promo": true },
-    { "id": 8, "name": "Lenços Umedecidos Huggies c/ 96", "price": "R$ 18,90", "promo": false },
-    { "id": 9, "name": "Leite NAN 800g", "price": "R$ 69,90", "promo": false }
-  ],
-  "Saúde": [
-    { "id": 10, "name": "Termômetro Digital", "price": "R$ 22,99", "promo": true },
-    { "id": 11, "name": "Esfigmomanômetro (Aparelho de Pressão)", "price": "R$ 89,90", "promo": false },
-    { "id": 12, "name": "Oxímetro de Dedo", "price": "R$ 129,90", "promo": true }
+    {
+      "id": 4,
+      "name": "Shampoo Anticaspa",
+      "price": "R$ 19,90",
+      "promo": true
+    },
+    {
+      "id": 5,
+      "name": "Sabonete Líquido",
+      "price": "R$ 8,50",
+      "promo": false
+    }
   ]
 }
