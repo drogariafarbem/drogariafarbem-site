@@ -1,44 +1,23 @@
+
 {
   "Medicamentos": [
-    {
-      "id": 1,
-      "name": "Dipirona Sódica 500mg c/ 20",
-      "price": "R$ 8,90",
-      "promo": true
-    },
-    {
-      "id": 2,
-      "name": "Paracetamol 750mg c/ 20",
-      "price": "R$ 9,50",
-      "promo": false
-    }
+    { "id": 1, "name": "Dipirona 500mg c/ 20 comprimidos", "price": "R$ 9,90", "promo": true },
+    { "id": 2, "name": "Paracetamol 750mg c/ 20 comprimidos", "price": "R$ 12,50", "promo": false },
+    { "id": 3, "name": "Vitamina C efervescente c/ 10", "price": "R$ 14,90", "promo": true }
   ],
-  "Vitaminas e Suplementos": [
-    {
-      "id": 3,
-      "name": "Vitamina C efervescente c/ 10",
-      "price": "R$ 14,90",
-      "promo": true
-    },
-    {
-      "id": 4,
-      "name": "Ômega 3 1000mg c/ 120 cápsulas",
-      "price": "R$ 39,90",
-      "promo": false
-    }
+  "Perfumaria": [
+    { "id": 4, "name": "Shampoo Anticaspa 200ml", "price": "R$ 19,90", "promo": false },
+    { "id": 5, "name": "Sabonete Líquido 250ml", "price": "R$ 15,90", "promo": false },
+    { "id": 6, "name": "Perfume Floral 100ml", "price": "R$ 89,90", "promo": true }
   ],
-  "Higiene e Beleza": [
-    {
-      "id": 5,
-      "name": "Shampoo Anticaspa 200ml",
-      "price": "R$ 18,90",
-      "promo": false
-    },
-    {
-      "id": 6,
-      "name": "Creme Dental 90g",
-      "price": "R$ 4,99",
-      "promo": true
-    }
+  "Infantil": [
+    { "id": 7, "name": "Fraldas Pampers M c/ 30 unid.", "price": "R$ 49,90", "promo": true },
+    { "id": 8, "name": "Lenços Umedecidos Huggies c/ 96", "price": "R$ 18,90", "promo": false },
+    { "id": 9, "name": "Leite NAN 800g", "price": "R$ 69,90", "promo": false }
+  ],
+  "Saúde": [
+    { "id": 10, "name": "Termômetro Digital", "price": "R$ 22,99", "promo": true },
+    { "id": 11, "name": "Esfigmomanômetro (Aparelho de Pressão)", "price": "R$ 89,90", "promo": false },
+    { "id": 12, "name": "Oxímetro de Dedo", "price": "R$ 129,90", "promo": true }
   ]
 }
