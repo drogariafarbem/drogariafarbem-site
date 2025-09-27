@@ -1,56 +1,38 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+import React from "react";
+import "./index.css";
+
+function App() {
+  return (
+    <div>
+      {/* Cabeçalho */}
+      <header>
+        <h1>💊 Drogaria Farbem</h1>
+        <p>Saúde com carinho, todos os dias</p>
+      </header>
+
+      {/* Produtos */}
+      <main className="produtos">
+        <div className="produto-card">
+          <h3>Dipirona</h3>
+          <p>R$ 9,90</p>
+        </div>
+        <div className="produto-card">
+          <h3>Paracetamol</h3>
+          <p>R$ 7,50</p>
+        </div>
+        <div className="produto-card">
+          <h3>Ibuprofeno</h3>
+          <p>R$ 12,00</p>
+        </div>
+      </main>
+
+      {/* Rodapé */}
+      <footer>
+        <p>© 2025 Drogaria Farbem - Todos os direitos reservados</p>
+      </footer>
+    </div>
+  );
 }
 
-.app {
-  text-align: center;
-}
-
-.header {
-  background-color: #d32f2f; /* vermelho */
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.logo {
-  width: 60px;
-  height: auto;
-}
-
-.titulo {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.conteudo {
-  padding: 20px;
-}
-
-.subtitulo {
-  color: #d32f2f;
-  margin-bottom: 20px;
-}
-
-.lista {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  gap: 15px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.item {
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  font-weight: bold;
-}
+export default App;
 
